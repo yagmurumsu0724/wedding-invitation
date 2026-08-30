@@ -19,27 +19,23 @@ export default function App() {
     if (nextState) {
       setTimeout(() => {
         cardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 300);
+      }, 350);
     }
   };
 
   return (
     <div className="app-wrapper">
       <main className="wedding-container">
-        {/* Module 1: Mühürlü Dijital Zarf */}
+        {/* Module 1: Mühürlü Dijital Zarf (Tam Ekran Kapak) */}
         <HeroEnvelope 
           isOpen={isEnvelopeOpen} 
           onToggleOpen={handleToggleEnvelope} 
         />
 
-        {/* Ana Davetiye Kartı Gövdesi */}
+        {/* Ana Davetiye Kartı Gövdesi (Mühüre Dokununca Açılır) */}
         <div 
           ref={cardRef}
-          className="invitation-card-body"
-          style={{
-            opacity: isEnvelopeOpen ? 1 : 0.95,
-            transition: 'all 0.5s ease-in-out'
-          }}
+          className={`invitation-card-body ${isEnvelopeOpen ? 'revealed' : 'locked'}`}
         >
           {/* Module 2: Oheka Castle Konaklama & Fiyat Bilgisi */}
           <LocationCard />

@@ -17,6 +17,7 @@ node_modules/
 
 # Production build outputs
 dist/
+.netlify/
 
 # Local env files
 .env
