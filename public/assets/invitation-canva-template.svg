@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 2400" width="800" height="2400">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Playfair+Display:wght@600;700&amp;family=Montserrat:wght@400;600&amp;display=swap');
+      .bg-olive { fill: #2F3E2E; }
+      .bg-card { fill: #FAF9F6; }
+      .text-gold { fill: #C5A059; font-family: 'Great Vibes', cursive; }
+      .text-serif { fill: #2D2D2D; font-family: 'Playfair Display', serif; font-weight: 600; }
+      .text-sans { fill: #555555; font-family: 'Montserrat', sans-serif; }
+      .gold-stroke { stroke: #C5A059; stroke-width: 2; fill: none; }
+    </style>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAD7A5"/>
+      <stop offset="100%" stop-color="#C49F58"/>
+    </linearGradient>
+    <radialGradient id="waxGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#E6C280"/>
+      <stop offset="40%" stop-color="#C5A059"/>
+      <stop offset="85%" stop-color="#8C6A2D"/>
+      <stop offset="100%" stop-color="#59421A"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Envelope Hero Section -->
+  <rect x="0" y="0" width="800" height="600" class="bg-olive" />
+  
+  <!-- Subtitle -->
+  <text x="400" y="140" text-anchor="middle" font-family="'Playfair Display', serif" font-size="20" letter-spacing="4" fill="#C5A059">DÜĞÜN DAVETİYESİ</text>
+  
+  <!-- Names -->
+  <text x="400" y="240" text-anchor="middle" class="text-gold" font-size="90">Emma &amp; James</text>
+
+  <!-- Date -->
+  <text x="400" y="300" text-anchor="middle" font-family="'Playfair Display', serif" font-size="20" letter-spacing="3" fill="#D4AF37">15 EKİM 2026 • OHEKA CASTLE</text>
+
+  <!-- Wax Seal -->
+  <circle cx="400" cy="430" r="55" fill="url(#waxGrad)" filter="drop-shadow(0px 8px 15px rgba(0,0,0,0.4))"/>
+  <circle cx="400" cy="430" r="44" fill="#D4AF37" stroke="rgba(255,255,255,0.4)" stroke-dasharray="4 2"/>
+  <text x="400" y="442" text-anchor="middle" font-family="'Playfair Display', serif" font-size="34" font-weight="700" fill="#3A290C">EJ</text>
+
+  <!-- Main Card Body -->
+  <rect x="50" y="600" width="700" height="1750" rx="16" class="bg-card" filter="drop-shadow(0px 10px 30px rgba(0,0,0,0.3))"/>
+
+  <!-- Location Section -->
+  <text x="400" y="700" text-anchor="middle" class="text-gold" font-size="70">Mekan</text>
+  <text x="400" y="740" text-anchor="middle" class="text-serif" font-size="24" letter-spacing="2">OHEKA CASTLE'DA KONAKLAMA</text>
+  <line x1="340" y1="765" x2="460" y2="765" class="gold-stroke" />
+
+  <text x="120" y="820" class="text-sans" font-size="18">✦ 42 misafire kadar tarihi Fransız şatosu ihtişamında konaklama</text>
+  <text x="120" y="860" class="text-sans" font-size="18">✦ Antika mobilyalar ve bahçe manzaralı şık, lüks süitler</text>
+  <text x="120" y="900" class="text-sans" font-size="18">✦ Açık büfe kahvaltı, kapalı havuz ve bahçelere erişim dahil</text>
+  <text x="120" y="940" class="text-sans" font-size="18">✦ Sınırlı kontenjan — Yerinizi ayırtmak için erken LCV yapınız</text>
+
+  <!-- Rate Badge -->
+  <rect x="250" y="980" width="300" height="40" rx="20" fill="rgba(197, 160, 89, 0.15)" stroke="#C5A059"/>
+  <text x="400" y="1006" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="16" font-weight="600" fill="#7A5B18">✦ Gecelik 250$'dan Başlayan Fiyatlarla ✦</text>
+
+  <!-- Timeline Section -->
+  <text x="400" y="1120" text-anchor="middle" class="text-gold" font-size="70">günün</text>
+  <text x="400" y="1160" text-anchor="middle" class="text-serif" font-size="24" letter-spacing="2">AKIŞI</text>
+  <line x1="340" y1="1185" x2="460" y2="1185" class="gold-stroke" />
+
+  <line x1="200" y1="1230" x2="200" y2="1530" stroke="#C5A059" stroke-width="2"/>
+
+  <!-- Timeline Items -->
+  <circle cx="200" cy="1250" r="20" fill="#FFF" stroke="#C5A059" stroke-width="2"/>
+  <text x="240" y="1245" class="text-serif" font-size="20" fill="#C5A059">15:30</text>
+  <text x="240" y="1265" class="text-sans" font-size="16" font-weight="600">NİKAH TÖRENİ</text>
+
+  <circle cx="200" cy="1320" r="20" fill="#FFF" stroke="#C5A059" stroke-width="2"/>
+  <text x="240" y="1315" class="text-serif" font-size="20" fill="#C5A059">16:30</text>
+  <text x="240" y="1335" class="text-sans" font-size="16" font-weight="600">KOKTEYL SAATİ</text>
+
+  <circle cx="200" cy="1390" r="20" fill="#FFF" stroke="#C5A059" stroke-width="2"/>
+  <text x="240" y="1385" class="text-serif" font-size="20" fill="#C5A059">17:00</text>
+  <text x="240" y="1405" class="text-sans" font-size="16" font-weight="600">FOTOĞRAF ÇEKİMİ</text>
+
+  <circle cx="200" cy="1460" r="20" fill="#FFF" stroke="#C5A059" stroke-width="2"/>
+  <text x="240" y="1455" class="text-serif" font-size="20" fill="#C5A059">18:30</text>
+  <text x="240" y="1475" class="text-sans" font-size="16" font-weight="600">DÜĞÜN YEMEĞİ</text>
+
+  <circle cx="200" cy="1530" r="20" fill="#FFF" stroke="#C5A059" stroke-width="2"/>
+  <text x="240" y="1525" class="text-serif" font-size="20" fill="#C5A059">20:00</text>
+  <text x="240" y="1545" class="text-sans" font-size="16" font-weight="600">DANS &amp; PARTİ</text>
+
+  <!-- Details Section -->
+  <text x="400" y="1650" text-anchor="middle" class="text-gold" font-size="70">önemli</text>
+  <text x="400" y="1690" text-anchor="middle" class="text-serif" font-size="24" letter-spacing="2">DETAYLAR</text>
+  <line x1="340" y1="1715" x2="460" y2="1715" class="gold-stroke" />
+
+  <text x="400" y="1760" text-anchor="middle" font-family="'Playfair Display', serif" font-size="18" fill="#C5A059">KIYAFET KODU</text>
+  <text x="400" y="1790" text-anchor="middle" class="text-sans" font-size="15">Semi-formal &amp; elegant. Pastel ve doğal tonlar tercih edebilirsiniz.</text>
+
+  <text x="400" y="1850" text-anchor="middle" font-family="'Playfair Display', serif" font-size="18" fill="#C5A059">ULAŞIM &amp; SERVİS</text>
+  <text x="400" y="1880" text-anchor="middle" class="text-sans" font-size="15">Tören alanından resepsiyona özel servis araçları kaldırılacaktır.</text>
+
+  <!-- Footer Thank You -->
+  <text x="400" y="2020" text-anchor="middle" class="text-gold" font-size="80">teşekkür ederiz</text>
+  <text x="400" y="2060" text-anchor="middle" font-family="'Playfair Display', serif" font-size="16" letter-spacing="3" fill="#757575">TÜM SEVGİLERİMİZLE • EMMA &amp; JAMES</text>
+
+  <!-- Frame -->
+  <rect x="250" y="2100" width="300" height="220" rx="8" fill="#FFF" stroke="#E2E2E2" stroke-width="4"/>
+  <rect x="260" y="2110" width="280" height="200" fill="#EAEAEA"/>
+  <text x="400" y="2215" text-anchor="middle" class="text-serif" font-size="16" fill="#888">Emma &amp; James</text>
+</svg>

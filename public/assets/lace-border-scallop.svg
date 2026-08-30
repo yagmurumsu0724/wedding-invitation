@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 60" width="100%" height="100%" preserveAspectRatio="none">
+  <!-- Off-white Scalloped Top Border -->
+  <path d="M0,0 L1200,0 L1200,20 Q1170,45 1140,20 Q1110,45 1080,20 Q1050,45 1020,20 Q990,45 960,20 Q930,45 900,20 Q870,45 840,20 Q810,45 780,20 Q750,45 720,20 Q690,45 660,20 Q630,45 600,20 Q570,45 540,20 Q510,45 480,20 Q450,45 420,20 Q390,45 360,20 Q330,45 300,20 Q270,45 240,20 Q210,45 180,20 Q150,45 120,20 Q90,45 60,20 Q30,45 0,20 Z" fill="#FAF9F6"/>
+  
+  <!-- Tiny Gold Dots Row along scallops -->
+  <circle cx="30" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="90" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="150" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="210" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="270" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="330" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="390" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="450" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="510" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="570" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="630" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="690" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="750" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="810" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="870" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="930" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="990" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="1050" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="1110" cy="10" r="2.5" fill="#C5A059"/>
+  <circle cx="1170" cy="10" r="2.5" fill="#C5A059"/>
+</svg>
