@@ -140,7 +140,7 @@ html, body {
 /* Full Screen Envelope Hero Layout */
 .envelope-hero {
   position: relative;
-  background: var(--bg-green);
+  background: #243526;
   color: #FFFFFF;
   min-height: 100vh;
   min-height: 100dvh;
@@ -148,22 +148,36 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 24px;
+  padding: 12px;
   text-align: center;
-  background-image: radial-gradient(circle at 50% 35%, #2D422F 0%, var(--bg-green) 65%, var(--bg-green-dark) 100%);
   overflow: hidden;
-  box-shadow: inset 0 0 40px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 30px rgba(0,0,0,0.2);
   cursor: pointer;
   transition: min-height 0.7s cubic-bezier(0.4, 0, 0.2, 1), padding 0.6s ease;
 }
 
 .envelope-hero.opened {
   min-height: 580px;
-  padding: 60px 24px 40px;
+  padding: 20px 12px 30px;
 }
 
-/* Uploaded Vintage Components Styling */
-.vintage-frame-overlay {
+/* Vintage Envelope Card Container */
+.vintage-envelope-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh - 24px);
+  min-height: calc(100dvh - 24px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* 1. Yırtık Kağıt Çerçeve Arka Plan Görseli */
+.vintage-paper-frame-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -171,97 +185,118 @@ html, body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  opacity: 0.18;
-  mix-blend-mode: overlay;
-  pointer-events: none;
   z-index: 1;
-}
-
-.vintage-flower-branch {
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-  width: 150px;
-  opacity: 0.75;
-  mix-blend-mode: lighten;
   pointer-events: none;
-  z-index: 2;
-  transform: rotate(-10deg);
+  overflow: hidden;
+  border-radius: 12px;
 }
 
-.envelope-lace-border {
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  background-size: contain;
+.vintage-paper-frame-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.95;
+  filter: contrast(1.05) brightness(0.98);
 }
 
-.envelope-content-container {
+/* 2. İç Yeşil Kart Alanı */
+.green-inner-card {
+  position: relative;
+  z-index: 3;
+  width: 92%;
+  max-width: 380px;
+  background: radial-gradient(circle at 50% 35%, #2D422F 0%, #243526 70%, #172418 100%);
+  border-radius: 16px;
+  border: 1.5px solid rgba(197, 160, 89, 0.45);
+  box-shadow: 
+    0 15px 40px rgba(0, 0, 0, 0.55),
+    inset 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 36px 20px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  z-index: 4;
+  overflow: hidden;
+}
+
+/* 3. Zambak Çiçeği İllüstrasyonu (Şeffaf Harmanlanmış) */
+.vintage-lily-wrapper {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  width: 140px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.85;
+  mix-blend-mode: screen;
+  filter: contrast(1.1);
+}
+
+.vintage-lily-img {
   width: 100%;
-  position: relative;
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  filter: contrast(1.15) brightness(1.02);
 }
 
 .gold-sparkle-icon {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));
 }
 
 .envelope-subtext {
   font-family: var(--font-serif);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   letter-spacing: 5px;
   color: #C5A059;
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .envelope-names {
   font-family: 'Great Vibes', cursive;
-  font-size: 4.4rem;
+  font-size: 4.2rem;
   color: #FAF2E6;
   text-shadow: 0 2px 10px rgba(0,0,0,0.4);
   line-height: 1.1;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .envelope-date-location {
   font-family: var(--font-serif);
-  font-size: 0.95rem;
-  letter-spacing: 4px;
+  font-size: 0.9rem;
+  letter-spacing: 3.5px;
   color: #C5A059;
   text-transform: uppercase;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
-/* Uploaded Gold Rose Wax Seal Styling */
+/* 4. 3D Gül Kabartmalı Yuvarlak Altın Mühür */
 .wax-seal-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 4;
 }
 
 .wax-seal-img-box {
-  width: 110px;
-  height: 110px;
+  width: 105px;
+  height: 105px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 
-    0 12px 35px rgba(0, 0, 0, 0.55),
-    0 0 0 2px rgba(197, 160, 89, 0.4);
+    0 12px 30px rgba(0, 0, 0, 0.6),
+    0 0 0 2.5px rgba(197, 160, 89, 0.6);
   cursor: pointer;
   position: relative;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   animation: sealPulse 2.5s infinite ease-in-out;
+  background: radial-gradient(circle at 35% 35%, #F0D399 0%, #D4AF37 50%, #A6822B 100%);
+  overflow: hidden;
+  clip-path: circle(50% at 50% 50%);
 }
 
 .gold-rose-seal-img {
@@ -269,13 +304,15 @@ html, body {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+  clip-path: circle(50% at 50% 50%);
+  transition: transform 0.3s ease;
 }
 
 .wax-seal-img-box:hover {
   transform: scale(1.08);
   box-shadow: 
-    0 16px 40px rgba(197, 160, 89, 0.7),
-    0 0 0 4px rgba(197, 160, 89, 0.6);
+    0 16px 38px rgba(197, 160, 89, 0.75),
+    0 0 0 4px rgba(197, 160, 89, 0.7);
 }
 
 .wax-seal-img-box.seal-open {
@@ -288,10 +325,10 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 22px;
+  margin-top: 18px;
   font-family: var(--font-serif);
-  font-size: 0.72rem;
-  letter-spacing: 3px;
+  font-size: 0.7rem;
+  letter-spacing: 2.8px;
   color: #D8C6A7;
   text-transform: uppercase;
   opacity: 0.92;
@@ -675,11 +712,15 @@ html, body {
     font-size: 2.5rem;
   }
   .envelope-names {
-    font-size: 3.6rem;
+    font-size: 3.5rem;
   }
   .envelope-date-location {
-    font-size: 0.85rem;
-    letter-spacing: 3px;
+    font-size: 0.82rem;
+    letter-spacing: 2.8px;
+  }
+  .green-inner-card {
+    width: 95%;
+    padding: 30px 14px 24px;
   }
   .serif-title {
     font-size: 1.1rem;
